@@ -13,11 +13,6 @@ import { configuration } from 'src/config/config';
       password: configuration.postgres.password,
       database: configuration.postgres.database,
       autoLoadEntities: true,
-      entities: [],
-      migrations: ['src/migrations/*.ts'],
-      cli: {
-        migrationsDir: 'src/migrations',
-      },
     }),
   ],
 })
